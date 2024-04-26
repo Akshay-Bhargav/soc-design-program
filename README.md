@@ -7,7 +7,9 @@
 Our objective of this course mainly deals with the chips or the processor as mentioned with the square box in the above picture.
 * Peripherals of the chip/processor :Across the chip/processor we will be able to see many more interface conncetion across the board as show in the below picture![processor](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7d796770-de7a-48b5-9f12-0bb894ed8765)
 
-Processor ha sbeen connected to many more interfaces such as to the JTAG UART which helps in the communication between the external devices without the mediating devices such as RS-232.Also it will be connceted to the SDRAM for the Memory ,Flash,Voltage connection,Ground,ADC etc.
+Processor has been connected to many more interfaces such as to the JTAG UART which helps in the communication between the external devices without the mediating devices such as RS-232.Also it will be connceted to the SDRAM for the Memory ,Flash,Voltage connection,Ground,ADC etc.
+
+* Packages : 
 
 
 
