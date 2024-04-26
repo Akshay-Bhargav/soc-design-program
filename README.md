@@ -41,7 +41,7 @@ This section deal with how the signals are read by the RISC-V
 When we run the application the commands  will get read through the System Software and then it will get passed through the Hardware.
 ![l1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d702a8c2-661a-4867-9c61-85edb369d6ed)
 
-*System Software:
+* System Software:
  The flow of the insturction in the System Software can be divided into 3 parts such as:
   * Operating system:
     OS handles the I/O operations and place a crucial role in allotment of memory.It will be having all the details regarding the I/O pins configurations,buses,Interrupts etc. It will conduct low level system functions
@@ -51,4 +51,12 @@ When we run the application the commands  will get read through the System Softw
   
   * Assembler :
    Assembler takes the instruction set which will be there in the assembly level language and converts it into the binary format or the machine level language which can be understood by the hardware. As per the output of the assembler the harware will generate the chip layout. The output of the assembler will be in binary form.
+
+* Hardware:
+   Hardware Description Language ensures the conversion of instuctions sets into the binary format or to RTL language. Then after the instuction getting into the RTL format it will generate a netlist which includes the connection of the logic gates. Basically netlist helps in the gate level description of the code. AS per the netlist design the physical design gets implemented or the layouts will be built inside the chip.
+  
+* Code flow can be divided into 3 parts:
+  * RISC-V ISA ( till the generation of ISA).
+  * RTL and Syntehsis of RISC-V based CPU core(till netlist generation).
+  * Physical Design Implementation.
 
