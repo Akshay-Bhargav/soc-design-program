@@ -31,16 +31,18 @@ Inside the chip there is a Square Patch which has been divided into many regions
 *  Pads : Pads are the medium through wich the input and output signals has to pass.
 *  Die : Small block of semiconducting materials on which the Pads has been built and mainly refers to the cornors of Square patch.
 *   Foundry IP's : Foundry will helps in providing the essential building block for the chip design,allowing the designer to leverage pre-designed components optimized for specific purpose technologies.
-
-
-  
-
-
-
-
-
- 
   
 #### Intro to RISC-V
+RISC refers to the Reduced Instruction Set Computer where V stands for the fifth generation of the architecture.The instructions given will be less and the instuctions will be simple.It consists of more number of general purpose registers. The RISC-V architecture provides the benifit of pipelining.The addressing modes are simple. RISC-V is a open source insturction set architeture which allows the user to customize .It takes single clock cycle for the execution of the instruction.The base instruction set has a fixwd length of 32-bits and the ISA supports variable length extensions where each instruction can be any number of 16 bit parcels in length.The memory usuage of the RISC will be high and also the price of the chip will be costlier than the CISC.
 
 ####  From Software Applications to Hardware
+This section deal with how the signals are read by the RISC-V
+
+When we run the application it will get read through the System Software and then it will get passed through the Hardware.
+
+The flow of the insturction can be divided into 3 parts such as:
+* Operating system
+* Compiler
+* Assembler
+
+The user will do the necessary code in the high level language such as C,C++,Java,Python,HTML
