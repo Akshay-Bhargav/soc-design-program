@@ -16,9 +16,8 @@
     - DIP(Double In Line Package)
     - PGA(Pin Grid Array)
   * Surface Mount Packages: This is the Package where the external devices are mounted on the PCB board.The most common technique used in this type are
-     - QFN(Quad Flat No-Lead):These are compact sized,the model QFN-48 has 48 pins in it where the chip will be having pins in all the 4 sides.In the below figure we can see the QFN-48 packaged chip![qfn](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/13d7d220-927b-4407-9063-9381d9f851fd)
-
-    - Ball Grid Array
+     - QFN(Quad Flat No-Lead):These are compact sized,the model QFN-48 has 48 pins in it where the chip will be having pins in all the 4 sides.In the below figure we can see the QFN-48 packaged chip![pp](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ff015b50-e362-46cd-832e-5575ae7b8cab)
+     - Ball Grid Array : Instead of leads in this we use metall balls to create the respective connection
   * Contact Less Packages: In this type there will be no physical connection between the PCM.
 
 
