@@ -7,9 +7,20 @@
   Our objective of this course mainly deals with the chips or the processor as mentioned with the square box in the above picture.
 * Peripherals of the chip/processor :
   Across the chip/processor we will be able to see many more interface conncetion across the board as show in the below picture![processor](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7d796770-de7a-48b5-9f12-0bb894ed8765)
-  Processor has been connected to many more interfaces such as to the JTAG UART which helps in the communication between the external devices without the mediating devices such as RS-232.Also it will be connceted to the SDRAM for the Memory ,Flash,Voltage connection,Ground,ADC etc.
+  Processor has been connected to many more interfaces such as to the JTAG UART which helps in the communication between the external devices without the mediating devices such as RS-232.Also it will be connceted to the SDRAM for the Memory,Flash,Voltage connection,Ground,ADC etc.
 
-* Packages : 
+* Packages : IC Packages protect the semiconductor devices and components and helps in the integration of the IC with the electronic devices. There are different types of packages such as:
+* * Through hole Packages: It is the type of package where 1 or more leads go through holes of PCB and gets connected using the solder.The other types in this are
+  * * SIP(Single In Line Package)
+    * DIP(Double In Line Package)
+    * PGA(Pin Grid Array)
+  * Surface Mount Packages: This is the Package where the external devices are mounted on the PCB board.The most common technique used in this type are
+  * * QFN(Quad Flat No-Lead):These are compact sized,the model QFN-48 has 48 pins in it where the chip will be having pins in all the 4 sides.In the below figure we can see the QFN-48 packaged chip![qfn](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e8b53160-bc27-4ec4-b97c-be4c0f1f70b2)
+    * Ball Grid Array
+  * Contact Less Packages: In this type there will be no physical connection between the PCM.
+
+
+  
 
 
 
