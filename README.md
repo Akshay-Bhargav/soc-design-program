@@ -1,6 +1,6 @@
 # soc-design-program
 ## DAY 1
-### How to talk to computers
+* How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
 #### Intro to RISC-V
 ####  From Software Applications to Hardware
