@@ -1,5 +1,5 @@
 # soc-design-program
-## DAY 1 
+## DAY 1
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
 * Arduino Leonardo:
@@ -126,7 +126,25 @@ OpenLANE is based on many other open source projects such as OpenROAD, Magic VLS
 * Physical verification includes the DRC which is arried out by Magic , Layout is done through Spice simuklator and LVS is tested using Magic and netgen.
 
 ### Get familiar to open-source EDA tools
-#### OpenLANE Directory structure in detail
+#### OpenLANE Directory structure in details
+Some of the basic commands and some abbrivations which we see in Linux:
+cd = change directry
+ls = list
+ls -ltr = list in chronological order
+ls --help = list of all the command statements
+clear = clears the window
+../ = back to previous directory
+skywater130_fd_sc_hd , here skywater130 refers to the tech and fd refers to the foundry ,sc refers to the standard cell,hd refers to the varient of this model
+
+Now let us see the options and other things present inside the pdks
+below photo shows the path for pdks ![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/344c0699-79f2-4aa6-8e30-17f5c6e46c1d)
+ 
+Use of help command can be seen in this photo![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/02640820-880c-4bab-9284-b33587c1b12e)
+
+Inside the pdks we see the skywater130a and its technical and reference libraries![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e6bec37a-5edb-46be-a0ad-ea9ce048e851)
+
+The below photo refers to the reference of libraries and how the timing details are shown in lib![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/0d7ca15e-8e20-4977-900a-5290e6f04440)
+
 #### Design Preparation Step
 #### Review files after design prep and run synthesis
 #### OpenLANE Projectr Git Link Description
