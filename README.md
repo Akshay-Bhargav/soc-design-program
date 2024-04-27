@@ -124,3 +124,10 @@ OpenLANE is based on many other open source projects such as OpenROAD, Magic VLS
 
 * Static Timing Analysis: Gives the timinig report which includes timing violation etc.
 * Physical verification includes the DRC which is arried out by Magic , Layout is done through Spice simuklator and LVS is tested using Magic and netgen.
+
+### Get familiar to open-source EDA tools
+#### OpenLANE Directory structure in detail
+#### Design Preparation Step
+#### Review files after design prep and run synthesis
+#### OpenLANE Projectr Git Link Description
+#### Steps to characterize synthesis results
