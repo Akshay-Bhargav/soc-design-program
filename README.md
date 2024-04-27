@@ -159,9 +159,15 @@ The below image shows the config.tcl which will be having the information about 
 Once the preparation is over we can see a new file in this picorv32 as runs and due to prepare all the lefs will get merged into one![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/da3eeef1-b0a9-4ade-bb79-d210753e4aa2)
 
 
-
-
-
 #### Review files after design prep and run synthesis
+After the preparation the "runs" folder will be having the below documents in it
+![ubu5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f3f2ae88-a9e5-4dfd-8a78-6e4b9b305449)
+In order to access the run use the date of the creation of the folder.In that we can see "tmp" and "results"  where we can see all the physical implimentation reports.Before synthesis all will be empty.
+The "merged lef" in the "tmp" will give us a report like this![ubu4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3f202fa1-cfde-4ae5-8c04-ef5e5778c9d2)
+
+For the synthesis to take place give "run_synthesis".The result can be seen like this
+![ss](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a9dac2bf-961e-4601-86b5-3d3510a59427)
+
+
 #### OpenLANE Projectr Git Link Description
 #### Steps to characterize synthesis results
