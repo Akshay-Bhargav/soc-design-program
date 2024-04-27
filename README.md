@@ -119,8 +119,8 @@ OpenLANE is based on many other open source projects such as OpenROAD, Magic VLS
 * Physical Implementation: It is also called Place andd Route.It uses OpenROAD.It includes Floor/Power planning,end decoupling capacitors and tap cells insertion.It includes the steps such as placement,post placement optimization,clock tree synthesis,routing.
 * LEC(Logical Equivalence Checking):It checks the proper working of the logic every time the netlist gets modified.
 * Dealing with Antenna Rules Violation:When the metal connection is too long,the metal rod works as a antenna and attracts the ions towards itself which will leads to the damage of transistor.So in order to overcome this we use two methods:
- * Bridging:High level Intermediators are attached.
- * Add Antenna diode: Add false diode to the circuit.While testing in Magic if it gets detected then replace the fake one with the original.![ant](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/cea723ae-af9b-455c-af7c-f24b083fe90b)
+  * Bridging:High level Intermediators are attached.
+  * Add Antenna diode: Add false diode to the circuit.While testing in Magic if it gets detected then replace the fake one with the original.![ant](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/cea723ae-af9b-455c-af7c-f24b083fe90b)
 
 * Static Timing Analysis: Gives the timinig report which includes timing violation etc.
 * Physical verification includes the DRC which is arried out by Magic , Layout is done through Spice simuklator and LVS is tested using Magic and netgen.
