@@ -1,7 +1,21 @@
 # soc-design-program
 ## DAY 1
 ### How to talk to computers
+#### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
+#### Intro to RISC-V
+####  From Software Applications to Hardware
 ### Soc design 
+#### Introduction to all components of open-source digital asic design
+#### Simplified RTL2GDS flow
+#### Introduction to OpenLANE and Strive chipsets
+#### Introduction to OpenLANE detailed ASIC design flow
+### Get familiar to open-source EDA tools
+#### OpenLANE Directory structure in details
+#### Design Preparation Step
+#### Review files after design prep and run synthesis
+#### OpenLANE Projectr Git Link Description
+#### Steps to characterize synthesis results
+
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
 * Arduino Leonardo:
   Basically Ardunio Boards are the microcontroller platform which gives easy of communication between the hardware and the softwre. We can easily do the hardware comnections and can easily code the necessary code for the projects. Arduino Leonardo is one of the type of hardware-software platform which is based in on the ATmega32u4. This board inculdes 20 digital I/O pins and a crystall oscillator of 16MHz frequency. In the 20 I/O ports 12 pins work as analog inputs and 7 pins are Pulse width modulation outputs.It also includes a USB connection, a power jack, reset pin and the ICSP header.It can be switch on with the help of the adaptor and also by connceting it to the computer through USB cable. ![arduino-leonardo-board1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/14ffae04-199f-42d1-9a83-454208820a4a)
@@ -103,10 +117,12 @@ The flow of the RTL to GDSII undergoes the following steps:
 ![routing](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/65ddf1f8-b493-48e5-980d-2b02e4ae31a9)
 
 * Signoff: This part deals with the verification and testing of the model.Testing such as DRC(Design Rule Checking), LVS (Layout vs Schematic), Timing verification, STA(Static Timing Analysis) etc are done.
+
 #### Introduction to OpenLANE and Strive chipsets
 OpenLANE: It is a open source model for RTL to GDSII flow and it comes with the APACHE version 2.0.So it is a free open source media where we can use it in the way we want.It started as an Open source flow for a Tape-out experiment. The main goal of OpenLANE is to produce a clean GDSII with no human interaction.It comes frome the striVE family which has Open PAKS, Open EDA, Open RTL in it.The family of the striVE can be understood in the below figure
 ![gen](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4e75f2ab-e391-451f-bf56-62b5e421a52d)
 It supports SkyWare130nm and also XFAB180 and GF130G.It is used to generate Macros and Chips.The two modes of operations are Automous and Interactive.It comes with large variety of designs. At present 43 designs with their best configuration is available.
+
 #### Introduction to OpenLANE detailed ASIC design flow
 OpenLANE is based on many other open source projects such as OpenROAD, Magic VLSI, KLayout,Fault,Yosys,QFlow,ABC.The detailed flow of the ASIC can be seen as
 ![flo](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f86b043e-276f-4529-a9fc-eb6e77494b3b)
