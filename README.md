@@ -172,4 +172,5 @@ For the synthesis to take place give "run_synthesis".The result can be seen like
 
 
 #### OpenLANE Projectr Git Link Description
+
 #### Steps to characterize synthesis results
