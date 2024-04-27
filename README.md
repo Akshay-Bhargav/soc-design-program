@@ -146,6 +146,22 @@ Inside the pdks we see the skywater130a and its technical and reference librarie
 The below photo refers to the reference of libraries and how the timing details are shown in lib![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/0d7ca15e-8e20-4977-900a-5290e6f04440)
 
 #### Design Preparation Step
+
+Here we are going to open the openlane and to get the neccessary packages for that we use the commands as shown in the below picture![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/6016f8ad-dcff-46b6-bcd8-f6cd0b54a67d)
+
+After this we can see check the number of designs in the openlane like this![ubu1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c3f60e42-f1d6-49d4-bcf2-310fb9ca5517)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/acd42938-81d9-467c-82c1-2d61578a567a)
+
+In the design we are choosing the picorva32 core which will be having all the instructions set commands in the src![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/1cf0f052-8956-4a27-9af0-537c2ef24cce)
+
+The below image shows the config.tcl which will be having the information about the clock speed etc![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7113dc5d-fbcd-4877-a7ce-35076c1f1580)
+
+Once the preparation is over we can see a new file in this picorv32 as runs and due to prepare all the lefs will get merged into one![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/da3eeef1-b0a9-4ade-bb79-d210753e4aa2)
+
+
+
+
+
 #### Review files after design prep and run synthesis
 #### OpenLANE Projectr Git Link Description
 #### Steps to characterize synthesis results
