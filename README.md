@@ -107,4 +107,20 @@ OpenLANE: It is a open source model for RTL to GDSII flow and it comes with the 
 ![gen](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4e75f2ab-e391-451f-bf56-62b5e421a52d)
 It supports SkyWare130nm and also XFAB180 and GF130G.It is used to generate Macros and Chips.The two modes of operations are Automous and Interactive.It comes with large variety of designs. At present 43 designs with their best configuration is available.
 #### Introduction to OpenLANE detailed ASIC design flow
+OpenLANE is based on many other open source projects such as OpenROAD, Magic VLSI, KLayout,Fault,Yosys,QFlow,ABC.The detailed flow of the ASIC can be seen as
+![flo](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f86b043e-276f-4529-a9fc-eb6e77494b3b)
+* RTL synthesis: This program is carried out by Yosys and ABC, where ABC will be having abc.scripts as synthesis stratergies to create the netlist with the help of SCL
+* Synthesis Exploration: It gives the report on how the area and the delay are affected with accordance with the synthesis stratergies.
+* Design Exploration: It gives the design configuaration and generates report which includes over 35 differnet design matrix.![design exp](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/105485af-921b-48c3-903a-b4b48324910c)
 
+* Regression Testing: Here we can run over 70 different best design snaf compre reults to get the best known ones.
+* DFT(Design for Testing): It is a optional setup and it uses Fault App  where it does scan insertion,automatic test pattern generation,test patterns compaction,fault coverage, fault simulation.![dft](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/bc4e6f4b-49b6-4c93-8d60-599aaf073fd7)
+
+* Physical Implementation: It is also called Place andd Route.It uses OpenROAD.It includes Floor/Power planning,end decoupling capacitors and tap cells insertion.It includes the steps such as placement,post placement optimization,clock tree synthesis,routing.
+* LEC(Logical Equivalence Checking):It checks the proper working of the logic every time the netlist gets modified.
+* Dealing with Antenna Rules Violation:When the metal connection is too long,the metal rod works as a antenna and attracts the ions towards itself which will leads to the damage of transistor.So in order to overcome this we use two methods:
+ * Bridging:High level Intermediators are attached.
+ * Add Antenna diode: Add false diode to the circuit.While testing in Magic if it gets detected then replace the fake one with the original.![ant](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/cea723ae-af9b-455c-af7c-f24b083fe90b)
+
+* Static Timing Analysis: Gives the timinig report which includes timing violation etc.
+* Physical verification includes the DRC which is arried out by Magic , Layout is done through Spice simuklator and LVS is tested using Magic and netgen.
