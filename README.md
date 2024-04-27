@@ -2,32 +2,32 @@
 ## DAY 1
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
-##### Arduino Leonardo:
+* Arduino Leonardo:
   Basically Ardunio Boards are the microcontroller platform which gives easy of communication between the hardware and the softwre. We can easily do the hardware comnections and can easily code the necessary code for the projects. Arduino Leonardo is one of the type of hardware-software platform which is based in on the ATmega32u4. This board inculdes 20 digital I/O pins and a crystall oscillator of 16MHz frequency. In the 20 I/O ports 12 pins work as analog inputs and 7 pins are Pulse width modulation outputs.It also includes a USB connection, a power jack, reset pin and the ICSP header.It can be switch on with the help of the adaptor and also by connceting it to the computer through USB cable. ![arduino-leonardo-board1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/14ffae04-199f-42d1-9a83-454208820a4a)
 
   Our objective of this course mainly deals with the chips or the processor as mentioned with the square box in the above picture.
 Processors are the brain of the system which carry outs the programs,computes data, and coordinates the activity of other system components.It cannot work alone so it will be integrated with many more devices.
-  
-##### Peripherals of the chip/processor :
+
+* Peripherals of the chip/processor :
   Across the chip/processor we will be able to see many more interface conncetion across the board as show in the below picture![processor](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/80568241-de26-4f3e-b6de-22bfa06ff785)
 
   Processor has been connected to many more interfaces such as to the JTAG UART which helps in the communication between the external devices without the mediating devices such as RS-232.Also it will be connceted to the SDRAM for the Memory,Flash,Voltage connection,Ground,ADC etc.
 
-##### Packages : IC Packages protect the semiconductor devices and components and helps in the integration of the IC with the electronic devices. There are different types of packages such as:
-* Through hole Packages: It is the type of package where 1 or more leads go through holes of PCB and gets connected using the solder.The other types in this are
+* Packages : IC Packages protect the semiconductor devices and components and helps in the integration of the IC with the electronic devices. There are different types of packages such as:
+  * Through hole Packages: It is the type of package where 1 or more leads go through holes of PCB and gets connected using the solder.The other types in this are
     - SIP(Single In Line Package)
     - DIP(Double In Line Package)
     - PGA(Pin Grid Array)
       
-* Surface Mount Packages: This is the Package where the external devices are mounted on the PCB board.The most common technique used in this type are
+  * Surface Mount Packages: This is the Package where the external devices are mounted on the PCB board.The most common technique used in this type are
      - QFN(Quad Flat No-Lead):These are compact sized,the model QFN-48 has 48 pins in it where the chip will be having pins in all the 4 sides.In the below figure we can see the QFN-48 packaged chip![pp](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ff015b50-e362-46cd-832e-5575ae7b8cab)
      - Ball Grid Array : Instead of leads in this we use metall balls to create the respective connection
        
-* Contact Less Packages: In this type there will be no physical connection between the PCM.
+  * Contact Less Packages: In this type there will be no physical connection between the PCM.
 
 Inside the chip there is a Square Patch which has been divided into many regions as shown in the figure![fo](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/0a1e9cc7-07c5-4c7d-93ad-daba667dd01f)
 
-##### Core : Area inside the chip where all the digital logic takes places with the help of the digital ciruits with in it.
+* Core : Area inside the chip where all the digital logic takes places with the help of the digital ciruits with in it.
 * Pads : Pads are the medium through wich the input and output signals has to pass.
 *  Die : Small block of semiconducting materials on which the Pads has been built and mainly refers to the cornors of Square patch.
 *   Foundry IP's : Foundry will helps in providing the essential building block for the chip design,allowing the designer to leverage pre-designed components optimized for specific purpose technologies.
@@ -41,7 +41,7 @@ This section deal with how the signals are read by the RISC-V
 When we run the application the commands  will get read through the System Software and then it will get passed through the Hardware.
 ![l1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d702a8c2-661a-4867-9c61-85edb369d6ed)
 
-##### System Software:
+* System Software:
  The flow of the insturction in the System Software can be divided into 3 parts such as:
   * Operating system:
     OS handles the I/O operations and place a crucial role in allotment of memory.It will be having all the details regarding the I/O pins configurations,buses,Interrupts etc. It will conduct low level system functions
@@ -53,10 +53,10 @@ When we run the application the commands  will get read through the System Softw
   * Assembler :
    Assembler takes the instruction set which will be there in the assembly level language and converts it into the binary format or the machine level language which can be understood by the hardware. As per the output of the assembler the harware will generate the chip layout. The output of the assembler will be in binary form.
 
-##### Hardware:
+* Hardware:
    Hardware Description Language ensures the conversion of instuctions sets into the binary format or to RTL language. Then after the instuction getting into the RTL format it will generate a netlist which includes the connection of the logic gates. Basically netlist helps in the gate level description of the code. AS per the netlist design the physical design gets implemented or the layouts will be built inside the chip.
   
-##### Code flow can be divided into 3 parts:
+* Code flow can be divided into 3 parts:
   * RISC-V ISA (till the generation of ISA).
   * RTL and Syntehsis of RISC-V based CPU core(till netlist generation).
   * Physical Design Implementation.
@@ -65,6 +65,7 @@ When we run the application the commands  will get read through the System Softw
 ### Soc Design and OpenLANE
 
 #### Introduction to all components of open-source digital asic design
+
 ASICs refers to the Application Specific Integrated Ciruits which means the IC is designed too carry out only a specific function. Unlike the general purpose ICs which can be optimized to do many works ASICs are customized for a single set of work.
 Elements required for desiging  ASIC are:
 * RTL IP's(Register-Transfer Language):It consits of the HDL RTL models of the function which we want to implement  also it contains the netlist of the chip. Mainy open soruce RTL Design tools are available such as librecores.org, opencores.org, github.com
@@ -78,6 +79,8 @@ In the modern chip design industry many are going towards 5nm as the size of the
 Since we are dealing with the 130nm lets get to know the fast of 130nm tech with some examples
 (1)Intel:P4EE is a chip developed by Intel using 130nm which runs at 3.46 GHz
 (2)Single cycle RISC-V 32i used by the OSU team has reported that it runs at a speed of 327MHz and with pipeline it will cross 1GHz.
+
+
 #### Simplified RTL2GDS flow
 The flow of the RTL to GDSII undergoes the following steps:
 ![flow](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/509da15c-f883-466c-a8c2-46702e56b5b3)
@@ -104,11 +107,13 @@ The flow of the RTL to GDSII undergoes the following steps:
 * Signoff: This part deals with the verification and testing of the model.Testing such as DRC(Design Rule Checking), LVS (Layout vs Schematic), Timing verification, STA(Static Timing Analysis) etc are done.
 
 #### Introduction to OpenLANE and Strive chipsets
+
 OpenLANE: It is a open source model for RTL to GDSII flow and it comes with the APACHE version 2.0.So it is a free open source media where we can use it in the way we want.It started as an Open source flow for a Tape-out experiment. The main goal of OpenLANE is to produce a clean GDSII with no human interaction.It comes frome the striVE family which has Open PAKS, Open EDA, Open RTL in it.The family of the striVE can be understood in the below figure
 ![gen](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4e75f2ab-e391-451f-bf56-62b5e421a52d)
 It supports SkyWare130nm and also XFAB180 and GF130G.It is used to generate Macros and Chips.The two modes of operations are Automous and Interactive.It comes with large variety of designs. At present 43 designs with their best configuration is available.
 
 #### Introduction to OpenLANE detailed ASIC design flow
+
 OpenLANE is based on many other open source projects such as OpenROAD, Magic VLSI, KLayout,Fault,Yosys,QFlow,ABC.The detailed flow of the ASIC can be seen as
 ![flo](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f86b043e-276f-4529-a9fc-eb6e77494b3b)
 * RTL synthesis: This program is carried out by Yosys and ABC, where ABC will be having abc.scripts as synthesis stratergies to create the netlist with the help of SCL
@@ -164,7 +169,9 @@ Once the preparation is over we can see a new file in this picorv32 as runs and 
 #### Review files after design prep and run synthesis
 After the preparation the "runs" folder will be having the below documents in it
 ![ubu5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f3f2ae88-a9e5-4dfd-8a78-6e4b9b305449)
+
 In order to access the run use the date of the creation of the folder.In that we can see "tmp" and "results"  where we can see all the physical implimentation reports.Before synthesis all will be empty.
+
 The "merged lef" in the "tmp" will give us a report like this![ubu4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3f202fa1-cfde-4ae5-8c04-ef5e5778c9d2)
 
 For the synthesis to take place give "run_synthesis".The result can be seen like this
@@ -173,4 +180,35 @@ For the synthesis to take place give "run_synthesis".The result can be seen like
 
 #### OpenLANE Projectr Git Link Description
 
+Here a Introdction was given about the Github. In order to understand the OpenLANE we can go through a Github repository called "efabless/OpenLANE" where we can see the deatiled description of the OpenLANE.The Github repo of the efabless where the important concepts of OpenLANE are showcased like this![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/0831864c-cd54-48e8-9a9b-fe45d6d903ee)
+
+
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7e2153b7-34d8-4249-a1df-dbf06fde4007)
+
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/51519ccc-388d-4fb7-a470-18590980675c)
+
+![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/1f8253a9-ee95-4117-ac97-dd7424b8b25e)
+
 #### Steps to characterize synthesis results
+After synthesis now we are going to check the results and corresponding reports.The result of the synthesis is going to look like this 
+This is the path for the result of synthesis![12](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/83188806-84d9-44a9-b6d7-f524c5e9355d)
+ 
+Output in the synthesis window![10](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3626b40c-422a-41a4-afcb-92eece10199c)
+
+The reports regarding the synthesis can be seen through this path
+![13](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/8eed685c-c0dd-4f72-bee7-8fdd9758568f)
+
+The different types of reports in the Synthesis are
+![16](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3d761e53-7cbf-43fc-8854-02a8e5f287d6)
+
+Synthesis stat report will be generated in this form
+![14](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/b7aec4f5-7508-48a2-9561-4906a1a8a6e7)
+
+Synthesis timing report will get generated like this
+![timing dealy](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ad6fc67f-3d06-4449-8db9-469fd48d54e8)
+
+
+
+
+
+
