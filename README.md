@@ -4,11 +4,13 @@
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
 #### Intro to RISC-V
 ####  From Software Applications to Hardware
+
 ### Soc design 
 #### Introduction to all components of open-source digital asic design
 #### Simplified RTL2GDS flow
 #### Introduction to OpenLANE and Strive chipsets
 #### Introduction to OpenLANE detailed ASIC design flow
+
 ### Get familiar to open-source EDA tools
 #### OpenLANE Directory structure in details
 #### Design Preparation Step
