@@ -1,9 +1,11 @@
 # soc-design-program
-## DAY 1
+## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
 * Arduino Leonardo:
-  Basically Ardunio Boards are the microcontroller platform which gives easy of communication between the hardware and the softwre. We can easily do the hardware comnections and can easily code the necessary code for the projects. Arduino Leonardo is one of the type of hardware-software platform which is based in on the ATmega32u4. This board inculdes 20 digital I/O pins and a crystall oscillator of 16MHz frequency. In the 20 I/O ports 12 pins work as analog inputs and 7 pins are Pulse width modulation outputs.It also includes a USB connection, a power jack, reset pin and the ICSP header.It can be switch on with the help of the adaptor and also by connceting it to the computer through USB cable. ![arduino-leonardo-board1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/14ffae04-199f-42d1-9a83-454208820a4a)
+  Basically Ardunio Boards are the microcontroller platform which gives easy of communication between the hardware and the softwre. We can easily do the hardware comnections and can easily code the necessary code for the projects. Arduino Leonardo is one of the type of hardware-software platform which is based in on the ATmega32u4. This board inculdes 20 digital I/O pins and a crystall oscillator of 16MHz frequency. In the 20 I/O ports 12 pins work as analog inputs and 7 pins are Pulse width modulation outputs.It also includes a USB connection, a power jack, reset pin and the ICSP header.It can be switch on with the help of the adaptor and also by connceting it to the computer through USB cable.
+
+ ![arduino-leonardo-board1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/14ffae04-199f-42d1-9a83-454208820a4a)
 
   Our objective of this course mainly deals with the chips or the processor as mentioned with the square box in the above picture.
 Processors are the brain of the system which carry outs the programs,computes data, and coordinates the activity of other system components.It cannot work alone so it will be integrated with many more devices.
@@ -109,7 +111,9 @@ The flow of the RTL to GDSII undergoes the following steps:
 #### Introduction to OpenLANE and Strive chipsets
 
 OpenLANE: It is a open source model for RTL to GDSII flow and it comes with the APACHE version 2.0.So it is a free open source media where we can use it in the way we want.It started as an Open source flow for a Tape-out experiment. The main goal of OpenLANE is to produce a clean GDSII with no human interaction.It comes frome the striVE family which has Open PAKS, Open EDA, Open RTL in it.The family of the striVE can be understood in the below figure
+
 ![gen](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4e75f2ab-e391-451f-bf56-62b5e421a52d)
+
 It supports SkyWare130nm and also XFAB180 and GF130G.It is used to generate Macros and Chips.The two modes of operations are Automous and Interactive.It comes with large variety of designs. At present 43 designs with their best configuration is available.
 
 #### Introduction to OpenLANE detailed ASIC design flow
@@ -135,13 +139,13 @@ OpenLANE is based on many other open source projects such as OpenROAD, Magic VLS
 ### Get familiar to open-source EDA tools
 #### OpenLANE Directory structure in details
 Some of the basic commands and some abbrivations which we see in Linux:
-cd = change directry
-ls = list
-ls -ltr = list in chronological order
-ls --help = list of all the command statements
-clear = clears the window
-../ = back to previous directory
-skywater130_fd_sc_hd , here skywater130 refers to the tech and fd refers to the foundry ,sc refers to the standard cell,hd refers to the varient of this model
+* cd = change directry
+* ls = list
+* ls -ltr = list in chronological order
+* ls --help = list of all the command statements
+* clear = clears the window
+* ../ = back to previous directory
+* skywater130_fd_sc_hd , here skywater130 refers to the tech and fd refers to the foundry ,sc refers to the standard cell,hd refers to the varient of this model
 
 Now let us see the options and other things present inside the pdks
 below photo shows the path for pdks ![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/344c0699-79f2-4aa6-8e30-17f5c6e46c1d)
@@ -206,6 +210,35 @@ Synthesis stat report will be generated in this form
 
 Synthesis timing report will get generated like this
 ![timing dealy](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ad6fc67f-3d06-4449-8db9-469fd48d54e8)
+
+
+## DAY 2 -  Good floorplan vs bad flooeplan and introduction to library cells
+### Chip Floor planning considerations
+#### Utilization factor and aspect ratio
+* Netlist defines the connectiviy of an electronic design.
+Netlist represents the gate and the connection between them.Consider a netlist as show in the figure
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e5f114cc-579b-4f53-877a-67f1a393961f)
+
+In the chip on the silicon wafer we build the core inside the die as shown in the figure 
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/20b61182-09a2-48be-b353-f65aead4fe70)
+
+
+Now consider all the standard cells have the same dimension and the minimum area taken by this netlist can be shown like this
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/0e2c90ee-4c3a-4d73-8766-a62fa167201c)
+
+
+Utilization factor is the ratio of the Area occupued by the netlist to the Area of the core.If the netlist occupies the hole area of the core then it is called as 100% utilizaton of the area and the utilization factor will be 1.In the practicle senerios  netlist uses only 60% or 70% of the area..When the utilization factor is not 1 it significe  the occupied area and we can use the remaining area or optimize the area as per our need. Aspect ratio is a another term which is the ratio of the height of the core to the length of the core.Whenever the aspect ratio is 1 till tells that the chip is of square shape.If the ratio is of some other number then it significe that the chip is of rectangular shape.
+
+Below figure shows the Utilization ratio and the aspect ratio for a example:
+![41](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9819b7a7-757e-4474-969d-960eca875e99)
+
+
+#### Concept of pre-placed cells
+#### De-coupling capacitors
+#### Power planning
+#### Pin placement and logical cell placement blockage
+#### Steps to run floorplan using OpenLANE
+#### Review floorplan files and steps to view floorplan
 
 
 
