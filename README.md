@@ -277,8 +277,8 @@ For the floorplanning first let us see the configurations in the OpenLANE
 ![config](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/5a590592-1b0a-4135-9f69-676341a6c98d)
 
 
-In the configuaration the floorplanning.tcl and readme files looks like this ![ff tcl in config](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/044a3584
-![readme file](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/00adf7ae-66bd-4f78-9927-71ddd523d89d) -77ae-4671-a9f3-11aa06cf50e1)
+In the configuaration the floorplanning.tcl and readme files looks like this ![ff tcl in config](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/044a3584-77ae-4671-a9f3-11aa06cf50e1)
+![readme file](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/00adf7ae-66bd-4f78-9927-71ddd523d89d)
 
 #### Review floorplan files and steps to view floorplan
 * def = design exchange format.
