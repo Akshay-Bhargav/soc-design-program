@@ -301,7 +301,7 @@ Magic tool will pop up like this
 
 #### Review floorplan layout in Magic
 * Q+S to select the layout
-* V to fit the selected layout to the centre
+* V to fit the selected layout to fit into centre
 
 
 
