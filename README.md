@@ -302,7 +302,15 @@ Magic tool will pop up like this
 #### Review floorplan layout in Magic
 * Q+S to select the layout
 * V to fit the selected layout to fit into centre
+* Tap cells are used control the latch up condition.Here the N-Well to the Vdd and substrate to the Gnd.
 
+The Layout can be seen like this in the Magic![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/94e0de46-1e5c-42f7-a513-7de39c90072a)
+
+In order to select the pin just palce the cursor and press S.
+The Pin layers and the dimensions along with the co-ordinates are seen like this![pin layer](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/5ea7a94f-082a-4918-a4bd-dd2b7bebc817)
+
+The below picture shows the pin saperation.
+![metal seperation](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c284d6a1-012f-4371-a993-5a995fb57d25)
 
 
 
