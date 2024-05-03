@@ -271,11 +271,37 @@ The Pin placement will look like this for the above circuit
 ![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d6216315-f5b7-4c84-a31d-0139e235fa0d)
 
 #### Steps to run floorplan using OpenLANE
+* run_floorplan = floorplanning command.
 
+For the floorplanning first let us see the configurations in the OpenLANE
+![config](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/5a590592-1b0a-4135-9f69-676341a6c98d)
+
+
+In the configuaration the floorplanning.tcl and readme files looks like this ![ff tcl in config](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/044a3584
+![readme file](https://github.com/Akshay-Bhargav/soc-design-program/assets/168160665/00adf7ae-66bd-4f78-9927-71ddd523d89d) -77ae-4671-a9f3-11aa06cf50e1)
 
 #### Review floorplan files and steps to view floorplan
-#### Review floorplan layout in Magic
+* def = design exchange format.
+* 1 micron = 1000 database units as per our design.
 
+Path to check the result core utilization in the floor plan and checking whether the core utilization followed the presedence.
+![checkign2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ecd21beb-9559-4961-9d7d-e7fd16f9eac6)
+
+The unit and coordinates and components will be seen in the resuls followed by floorplan then in the def file. The result can be seen like this
+![units and coordinates o fthe die](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4378174a-6d2a-4c0d-a28d-360cab23d8f9)
+
+
+Now we will see the layout of the specifications through the Magic. The Magic will be present in the skywater130A of PDKS. So take the route of magic and the path of the merged lef and also the result flooplan as shown in the figure:
+![path for magic](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ce2e8fb2-cfdf-4c3a-9689-f47900fcf6de)
+
+Magic tool will pop up like this
+
+![magic](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a6bae0c5-c824-43b3-a533-12e8fbe821c2)
+
+
+#### Review floorplan layout in Magic
+* Q+S to select the layout
+* V to fit the selected layout to the centre
 
 
 
