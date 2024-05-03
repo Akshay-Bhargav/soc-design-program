@@ -1,4 +1,4 @@
-# soc-design-program
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9da7b6f1-b60e-4f11-94a9-b09db5e15dae)# soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -147,6 +147,8 @@ Some of the basic commands and some abbrivations which we see in Linux:
 * ../ = back to previous directory
 * skywater130_fd_sc_hd , here skywater130 refers to the tech and fd refers to the foundry ,sc refers to the standard cell,hd refers to the varient of this model
 
+To open the openLANE give the code as "docker ./flow.tcl -interactive"
+
 Now let us see the options and other things present inside the pdks
 below photo shows the path for pdks ![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/344c0699-79f2-4aa6-8e30-17f5c6e46c1d)
  
@@ -233,12 +235,44 @@ Below figure shows the Utilization ratio and the aspect ratio for a example:
 ![41](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9819b7a7-757e-4474-969d-960eca875e99)
 
 
-#### Concept of pre-placed cells
+#### Concept of Pre-placed cells
+
+Pre Placed cells are the blocks which contains or defines a certain logic as shown in the example![1a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/2b55dd48-3574-4a7f-9c49-dece56f77061)
+
+Here each part of the ciruit it been divided into 2 parts and each circuit is declared as a block and it can be seen like this![1b](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/477d82c1-9cae-4625-b098-cd1e8fd92300)
+
+![1c](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/0b0d1a25-308b-4aab-bfa7-f9dfc041d1ae)
+
+Commomnly available IP's in the market are Memory,Clock-gating cell,Comparator,Mux.
+
 #### De-coupling capacitors
+
+When the ciruit elements needs some specified voltage to get activated but due to the complexity in the ciruit there might be a voltage loss .So in order to solve this we use the decoupling capacitor which will be placed alongside the ciruit with the same voltage as the source as show in the below photos.
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/85b9294e-9dd8-444f-9de1-fca86dbcff9a)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a0b33eb6-ff5f-4e15-a049-f8e045061ed6)
+
+While placing the blocks segregate them in terms of input side and output side.
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f497828a-7581-4ebc-b82e-23c737b8eb12)
+
+
 #### Power planning
+
+When many capacitors start to discharge to a common ground then the ground line many face "Ground Bounce".When many capacitors starts to charge at a same time the voltage line will face "Voltage Droop".This problem can be solved by having multiple ground and soucre terminal.So all the outputs will be connected to either vdd or gnd and instead of taking inputs from the other bloks output now the blocks will take the inputs from the vdd and gnd lines.Consider the following exapmle circuit we can optimize  it as shown in the below photos:
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/20dcd4cc-888a-4f58-95ef-2d3723888837)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/84038454-dc28-4363-abe0-17c2a3d01ee8)
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/79d2b0d1-8906-4951-a35d-fa80c0c9a21c)
+
 #### Pin placement and logical cell placement blockage
+Clock port will be in bigger size than the pin ports in oreder to decrese the resistance.After the port installation block the contact between the ports.Now as a continuation of the previous power planning we take a exmple circute for the input and output considretaions as shoen in the figure:![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4373a11b-9dc3-4e53-a73c-267ff80f4778)
+
+The Pin placement will look like this for the above circuit
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d6216315-f5b7-4c84-a31d-0139e235fa0d)
+
 #### Steps to run floorplan using OpenLANE
+
+
 #### Review floorplan files and steps to view floorplan
+#### Review floorplan layout in Magic
 
 
 
