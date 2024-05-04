@@ -1,4 +1,4 @@
-![cell](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d3547d67-b4af-41d7-9606-849cacf4123e)# soc-design-program
+![11](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c8116fc9-9c78-44c4-a74f-ee97157e0c90)![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/245753ad-1bd4-4277-99d2-8066b22a1ab9)![cell](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d3547d67-b4af-41d7-9606-849cacf4123e)# soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -357,3 +357,71 @@ Path to check the placement in layout:
 Layout in MAgic and the Standard cells in the layout are shown in the below figure![magic layout](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c9ae0b56-f42a-4077-a365-6323e2c88eda)
 
 ![sc](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/65435615-9664-443d-8d72-110f372b4586)
+
+### Cell Design and characterization flows
+#### Inputs for cell design flow
+
+Each standard cells such as AND GATE, OR GATE, INV have their own cell design flow.
+The cell design flow consists of 3 parts namely 
+* Inputs
+* Design Steps
+* Outputs.
+Inputs includes
+  - DRC and LVS rules
+  - PDKS
+  - SPICE models
+  - Library and user defined specs.
+DRC and LVS rules are
+![drc](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3d73574c-3835-44d4-9231-13483c4956fc)
+
+SPICE models and parameters are
+![spice](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9ec96ec9-1ca6-48e3-aa39-621495fe30c4)
+
+#### Circuits design step
+Library and user defined specs are like :
+The cell height:The height of the cells is defined by the powelines and one has to design the cell with required drive strength with that defined height.
+Supply voltage: The top level design will mention the voltage level for the ciruit and the library developer has to develop the cell working for the specific voltage with considerations of the noise margin.
+Metal layer:There are specific rules while placing the different metal and other layers over each other.
+Pin locations: Library designer should be sure about the pin locations and the rules for presenting the pins.
+
+The Design setps include 3 parts:
+   - Ciruit design
+   - Layout design
+   - Charcterization
+
+Ciruit design should follow  the combination of PMOS and NMOS to get the logic and their width ratio.Output of the ciruit design is CDL(Ciruit descriptive language).
+![schem](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/502110a2-1a92-4506-ab2f-a1476a256a1e)
+
+#### Layout design steps
+It should follow  the circuit diagram, the graph of NMOS and PMOS Euler's path,stick diagram
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/079b793e-05ff-44f6-b1d1-09ffd6831bd1)
+
+The output of the layout design will be GDSII,LEF,extracted SPICE models which contains the parasitic cap and resistance in the layout
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/510f15d6-9f7e-41fd-b59d-27a81b4a80ca)
+
+#### Typical characterization flow
+
+Consider the example of  buffer layout.
+![11](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/226fc5c5-f8d8-4619-bd47-8be7cfe14d97)
+
+SPICE netist consist of the resistance and capacitance of the layers and also the sub ciruit of the main circuit.ALso we will get the NMOS and PMOS sPICE models.
+Chracterization flow consists:
+  - Readin the Modelfile
+  - Readin the extracted SPICE netlist.
+  - Behaviour of the buffer
+  - Read the sub circuit of inverter
+  - Attach the power source
+  - Apply the Simulus
+  - Output Capacitance
+  - Necessary simulation command
+
+![22](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/956d7788-9db8-49eb-b3ea-4a5b17400d59)
+![23](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e8ecb476-f7f5-4511-a1fa-3d0f3cec7cd8)
+
+Now feed all these into GUNA a characterization software and the software carry outs the timing,noise and power function.
+### General timing characterization parameters
+#### Timing threshold definations
+#### Propogation delay and transition time
+
+
+
