@@ -1,4 +1,4 @@
-# soc-design-program
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/469a15be-31b4-4935-84c0-c9c771a987c0)# soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -419,9 +419,41 @@ Chracterization flow consists:
 ![23](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e8ecb476-f7f5-4511-a1fa-3d0f3cec7cd8)
 
 Now feed all these into GUNA a characterization software and the software carry outs the timing,noise and power function.
+
 ### General timing characterization parameters
 #### Timing threshold definations
+* slew_low_rise_thr
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/5d3dd4b2-8453-462f-b152-1f90172b6e96)
+
+* slew_high_rise_thr
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/44c5ef80-feb6-456d-9edb-24ec11be8e41)
+
+* slew_low_fall_thr![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/295f8ed2-9214-4143-94f4-1e6df6c20921)
+
+
+* slew_high_fall_thr
+  ![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/1c2d828c-5b3b-49aa-8e47-b9bf4801dacf)
+
+* in_rise_thr
+  ![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/117aba48-5e2b-4cb1-8834-192bea64e7a4)
+
+* in_fall_thr
+  ![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4816b7ee-6b68-4a19-b2d2-3981dfbb7757)
+
+* out_rise_thr
+  ![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ef20181d-b3a4-49df-9bad-725d5b494b72)
+
+* out_fall_thr
+  ![8](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/21fc568c-ed26-448f-a2f7-d4b4154b04bd)
+
 #### Propogation delay and transition time
+
+delay = out(any thresholds) - in(corresponding threshold)
+To margins at which we need to take the threshold values
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d3dd17a6-fe24-4d2b-bd4c-f87f41b9d2f9)
+
+A delay can be visualised as shown in the below figure
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/22d01309-3b8d-4a70-b573-d65e1d7e28e7)
 
 
 
