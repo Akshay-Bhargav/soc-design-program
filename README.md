@@ -556,4 +556,61 @@ The path to implement the inverter in the magic
 Layout of the inverter implemented in the Magic looks like this
 ![inv](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/78b8345e-9fc2-4f8c-9a16-dc227f5cb1c1)
 
+### Inception of Layout CMOS fabrication
+#### Create Active regions
+16-mask CMOS process.This process several steps such as
+* Selecting the substrate and the doping concentreation![1a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/498a8788-0bfd-4203-b87c-a068a83b62b1)
 
+* Creating active region: which includes applying 3 layers over the substrate and conducting photolithography.For the first time we use the mask in this step.
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/bb1db356-d264-4741-80b8-0dab864605ad)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/712dc32c-59f7-428a-bd68-4e8dd766935d)
+ 
+After the exposure to the UV light we will etch out the masked region
+![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/32542f1d-6bb0-4f0f-bc86-b8297ad16a7c)
+
+Photo reisit will be chemically removed followed by washing
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/fb0c3386-aa9d-433a-9495-df1003fc1e2c)
+
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/be7901d0-3b42-4fb2-9a2d-f400518df0e5)
+
+Field oxide is grown over again
+![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3e4016dc-c968-4d2a-9ae7-1cdbbf0c91b2)
+
+Because of this Isolation nodes will get created which will separate the transistors
+![8](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a4756eb4-3293-4a64-b62a-fc14aa80fac5)
+
+Acid wash to remove the above layer
+![9](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/887a25e3-3653-4bbb-9b13-6f179c1b50f1)
+
+#### Formation of N-well and P-well
+The 3rd steps is the N-WELL and P-WELL fabrication.It will be carried out as shown in the below photos.
+* In the 1st step we do the second masking which allows us to create the P-Well as shown in the figure
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/81f2612d-46a2-40b4-a076-3ca8d5652125)
+
+* Layout view of the mask![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/24a46664-156b-483a-9a72-b83483d9b4c7)
+
+* Here Photolithography will be done.![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e8fc0587-d979-45de-b4d9-3e6c5288349b)
+
+* The unmasked layer has been etched out![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/69de8bb7-427d-4726-b951-9e75f2bd4e7a)
+
+* Boron has been ion implanted into the substrate![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/619200b7-da5f-4226-8451-6ed4c4b04a9e)
+
+* Same procedure is carried out for the N-Well where phosphorus will be ion implemented.
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/b98e73ac-e691-4828-9827-306c31cc442f)
+![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d953d86d-5e2d-4daf-be4e-1c89d00fe85e)
+
+* In order to penetrate the N-well and P-well deep into the substrate, it will be kept in the high furnance at  a temparature of 1100 degrees.
+![8](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/27fe8188-15b6-4bc1-8195-b5eff8ddabe9)
+![9](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a68fb39f-9a12-4131-a86c-27331f8400f9)
+
+
+
+
+
+#### Formation of gate terminal
+#### Lightly doped drain formation
+#### Source and Drain Formation
+#### Local interconnect formation
+#### Higher level metal formation
+#### Lab introduction to SKY1130 basiclayers layout and LEF using inverter
+#### Lab steps to create std cell layout and extract spice netlist
