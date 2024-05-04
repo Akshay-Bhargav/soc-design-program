@@ -1,4 +1,4 @@
-# soc-design-program
+![cell](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d3547d67-b4af-41d7-9606-849cacf4123e)# soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -312,6 +312,48 @@ The Pin layers and the dimensions along with the co-ordinates are seen like this
 The below picture shows the pin saperation.
 ![metal seperation](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c284d6a1-012f-4371-a993-5a995fb57d25)
 
+### Library Binding and Placement
+#### Netlist binding and initial place design
+Now we have to provide a proper shape and size for the gates.It is done with the help of Libraries.
+The Cell libraries look like this![cell](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/56232254-7de0-41db-b857-e81dd6d09892)
+
+Libraries will have the inforamtion about the shapes and size,timings,delay information of a cell and contains many more cells in it.
+
+The below picture of the cell, ciruit and the power planned core
+![placement](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e16cf06a-1866-4778-9e34-f2d3e648f208)
+
+Now we have to forward with the placement of the cell in the core.
+The placing  ciruital components![placement](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/66a493a5-1b5e-4d40-8eed-5a76f5a73602)
+
+#### Optimize placement usning estimated wire-length and capacitance\
+Repeaters are the buffers which helps in signal integraty and helps to communicate with the long dstance components to communicate.
+Based on the wire length and capacitence value we insert the buffers.Slew depends on the value of the capacitor.
+The optimization done to the ciruit can be seen in the below figure
+The 1st part of the ciruit doesn't need any optimizaton since the length is sorter   ![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/015b4334-6853-4dcb-804f-c31324066ff2)
+
+For the 2nd part of the ciruit the optimization in placement looks likek this
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9060f922-666a-4df5-9c14-0e64f3465450)
+
+#### Final placement optimization
+The 3rd part and 4th part of the circuit can ba optimzed as shown in the below figure:![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/310ef008-33ee-413c-82bf-0530ec4d9ade)
+![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d7e247db-44f0-48a4-b432-2618bf26a861)
 
 
+#### Need for libraries and characterization
 
+The steps we follow while desiging the chip is like this![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/6325aa1f-1da3-460d-91c3-a5a40fdc8b64)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e8ad4a22-a561-4f36-b246-8db6682c7b75)
+
+Libraries will be having the gates and logical circuits in them in a format which can be understood by thte EDA tools.
+
+#### Congestion aware placement using RePLAce
+run_placemect = to run the placement 
+Output shown after the placement
+![placement done](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a44d9006-d2f8-49ee-bcfa-f34e5a9fc376)
+
+Path to check the placement in layout:
+![check placement](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/186127e8-d1ae-4577-9147-710200570829)
+
+Layout in MAgic and the Standard cells in the layout are shown in the below figure![magic layout](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c9ae0b56-f42a-4077-a365-6323e2c88eda)
+
+![sc](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/65435615-9664-443d-8d72-110f372b4586)
