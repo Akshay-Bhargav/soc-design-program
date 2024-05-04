@@ -1,4 +1,5 @@
-![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/469a15be-31b4-4935-84c0-c9c771a987c0)# soc-design-program
+
+#soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
