@@ -1,4 +1,4 @@
-
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/37d72398-2562-495e-88a8-a763193cd6c6)![VirtualBox_VDSWORKSHOP_05_05_2024_00_48_28](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/b684290b-12dc-49ba-a7f9-0103deb216cc)
 #soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
@@ -456,5 +456,67 @@ To margins at which we need to take the threshold values
 A delay can be visualised as shown in the below figure
 ![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/22d01309-3b8d-4a70-b573-d65e1d7e28e7)
 
+## Day 3 - Design library cell using Magic Layout and ngspice characterization
+### Labs for CMOS inverter ngspice simulations
+#### IO placer revision
+This has 3 modes 
+* 0 = unequidistant ports
+* 1 = equidistant ports
+* 2 = compressed ports
+To set this mode give command as shown in the below figure
 
+![VirtualBox_VDSWORKSHOP_05_05_2024_00_48_28](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/bfed14d7-0043-4c4a-b52f-6acbcd5e7915)
+
+The output of the mode 2 looks like this
+![com](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a60a766d-f791-4a76-99de-1036571d526b)
+
+#### SPICE deck creation for CMOS inverter
+It has connectivity information, inputs, tap points information
+Consider the ciruit and the component value as shown in the figure
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f4524f26-82c3-4387-83aa-a0d5f2853d22)
+
+Then later Identify the Nodes and name them
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/096d4eeb-ece2-4965-8e58-2e248b3f40f5)
+
+* In SPICE * = comments 
+* The netlist description of the circuit can be given as shown in the figure
+* Here the syntax is M1,drain,gate,substrate,source,type of transistor,width,length
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c11bffaf-057d-4cf3-a8bf-61fc8728076c)
+
+#### SPICE simulation lab for CMOS inverter
+
+* Syntax for connecting the other components = starting node,ending node,value
+* Simulation commands includes the interval from where to where the voltages are given and the step size og voltage.
+* Next step is to include the model file which contains the description of the transistors related to the specified technology.
+* The description looks like this
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/23e1bd53-3d75-4fa4-a5a4-2aa8e65fcf56)
+
+Conisder the below example of SPICE Simulation
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4ee258b4-ecf5-4546-a489-99f83031051e)
+
+Steps in the simulator
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/623846a6-10a7-413b-ba17-e68c7a164f18)
+![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/625d58a7-4e1f-44a2-8954-46a1da20741c)
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f04bd210-f574-4fcd-9f2e-296727f8f21c)
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/b66f05e5-02e0-4dff-aa30-cb75a87d6548)
+![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7aa09cfd-e3ea-4e3f-920a-d370952001d8)
+![8](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/363b40cd-90f4-4eb3-aec1-bd0f399f722d)
+
+![9](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ba22f5ea-6760-42b7-879b-b25b8865d6c6)
+
+The output looks like this:
+![10](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/34a140e1-a221-4807-a606-294e1405f09e)
+
+Consider another example
+![11](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/41739d08-20dd-4290-9bcb-28f2d12781e9)
+![12](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9f725edb-77a0-4da8-beea-56d20ebdb599)
+
+Output will be like this
+![13](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/66bf422f-94e7-4935-8999-b1395bbb8aeb)
+
+#### Switching Threshold Vm
+
+
+#### Static and dynamic simulation of CMOS inverter
+#### Lab steps tp git clone vsdstd cell design
 
