@@ -1,4 +1,4 @@
-![11](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c8116fc9-9c78-44c4-a74f-ee97157e0c90)![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/245753ad-1bd4-4277-99d2-8066b22a1ab9)![cell](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d3547d67-b4af-41d7-9606-849cacf4123e)# soc-design-program
+# soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -378,11 +378,11 @@ SPICE models and parameters are
 ![spice](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9ec96ec9-1ca6-48e3-aa39-621495fe30c4)
 
 #### Circuits design step
-Library and user defined specs are like :
-The cell height:The height of the cells is defined by the powelines and one has to design the cell with required drive strength with that defined height.
-Supply voltage: The top level design will mention the voltage level for the ciruit and the library developer has to develop the cell working for the specific voltage with considerations of the noise margin.
-Metal layer:There are specific rules while placing the different metal and other layers over each other.
-Pin locations: Library designer should be sure about the pin locations and the rules for presenting the pins.
+Library and user defined specs defines:
+* The cell height:The height of the cells is defined by the powelines and one has to design the cell with required drive strength with that defined height.
+* Supply voltage: The top level design will mention the voltage level for the ciruit and the library developer has to develop the cell working for the specific voltage with considerations of the noise margin.
+* Metal layer:There are specific rules while placing the different metal and other layers over each other.
+* Pin locations: Library designer should be sure about the pin locations and the rules for presenting the pins.
 
 The Design setps include 3 parts:
    - Ciruit design
