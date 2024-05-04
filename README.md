@@ -1,4 +1,3 @@
-![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/37d72398-2562-495e-88a8-a763193cd6c6)![VirtualBox_VDSWORKSHOP_05_05_2024_00_48_28](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/b684290b-12dc-49ba-a7f9-0103deb216cc)
 #soc-design-program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
