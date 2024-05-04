@@ -514,8 +514,46 @@ Output will be like this
 ![13](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/66bf422f-94e7-4935-8999-b1395bbb8aeb)
 
 #### Switching Threshold Vm
+The above examples output looks likes this
+![a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c7625f5a-c730-4bc9-93f8-f172347f5bc2)
 
+The Switching threshold can be visualized like this
+![b](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9982c253-c60d-41ea-a41e-3fbd207c1591)
+
+Regions of operations of transistors
+![ca](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/02a22dd7-ae05-40b8-9042-f542e7290656)
 
 #### Static and dynamic simulation of CMOS inverter
-#### Lab steps tp git clone vsdstd cell design
+Now let us calculate the rise and fall delay for the given specifications
+
+
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/1dacdba4-ce38-437d-8977-2162f0c8da14)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/feec18ee-5998-4ce7-aecf-8848dfe47a66)
+
+The output waveform looks like this
+![3a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/77eb1ca0-f627-42b6-95c9-21a8c3ddaca6)
+
+The falling delay co-ordinates are
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/6b79bc2a-7167-43b2-9f6e-28a87e5228dc)
+
+The rising delay co-ordinates are
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d612cc02-21bd-4e3e-9f63-5889d3046cbb)
+
+The results look like this:
+![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/055e437a-38e3-4b73-b429-bbfcf7dc9658)
+
+#### Lab steps tp Git Clone vsdstd cell design
+Here we are going to clone the github to the Open lane 
+![git path](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d6d1ef00-
+04f2-40f0-9221-9a3a5770fcd8)
+
+After this we will get acess to the github contents. In order to implement the inverter in the github we will add the tech file in the OpenLANE to the new window
+![adding to tech](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/fe3f1aee-5dab-414e-bd57-3eee8b6fef7d)
+
+The path to implement the inverter in the magic
+![path](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/779df56c-5951-417d-9e92-0d42da8fda1d)
+
+Layout of the inverter implemented in the Magic looks like this
+![inv](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/78b8345e-9fc2-4f8c-9a16-dc227f5cb1c1)
+
 
