@@ -728,8 +728,18 @@ Spice documnet looks like this:
 * Spice output
 ![spice output](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f151e53e-e89d-4dfd-bb82-1bb73e3f5f03)
 #### Lab steps to characterize inverter using sky130 model files
+GRAPH CODE = plot y vs time a
+* Output graph![output](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/49ff4a21-cd0f-4e1f-a2a6-0f08699d4b44)
+
+* rise dealy =0.0363![rise transition](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/89a8ea60-59b5-4634-a5f2-8ec49fb46911)
+
+* propogation delay =0.0368![propogation delay](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/667a5cf6-d1f1-4b72-a8a6-6fb9905bf4de)
+
+* fall delay =0.0274![fall delay](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c05c9150-f9cd-4731-82e6-51698cf793c8)
 
 #### Lab introduction to Magic tool options and DRC rules
+
+
 #### Lab introduction ro SKY130 padk's and steps to download labs
 #### Lab introduction to MAgic and steps to load Sky130 tech-rules
 #### Lab exersice to fix poly.9 error in sky130 tech-file
