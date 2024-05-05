@@ -604,12 +604,42 @@ The 3rd steps is the N-WELL and P-WELL fabrication.It will be carried out as sho
 ![9](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a68fb39f-9a12-4131-a86c-27331f8400f9)
 
 #### Formation of gate terminal
+The important SPICE parameters for the gate terminals:
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/1d0707c9-13fb-473e-9859-f8eef208b10a)
 
+Now increase the concentration at the top layer of p-well and n-well with the help of mask 4 and mask 5.
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/728859cd-d6d8-4e99-8796-4316db33b022)
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/48e4452d-76c7-4077-bdd8-b4784d96a0b0)
+![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/27c27189-48a1-490f-aaa9-112de37a42a8)
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3f42c29f-f0ad-4fc2-91e9-06f64becc3b2)
 
+Remove the oxide layer and place a new oxide layer of same thickness
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/08906f18-7b60-4469-81eb-5e84d3447d75)
 
+Place polysilicon layer over the oxide layer
+![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/6aada5c6-8c33-4095-9dce-a4322f5623c3)
+
+Create gate terminal using mask 6
+![9](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/26435f09-7a6f-4e63-bdbf-81cf8503d4ba)
+![10](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/dd1f5863-8aeb-450d-90c1-fab808defb11)
 
 #### Lightly doped drain formation
+Plasma anisotropic etching id the process where except the content in the side wall all other porstions will get etched out.
+
+In order to create the LDD we implant n type and p type materials into the respective wells with the help of mask 7 and mask 8
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/609d344d-1553-4804-9399-fcd15b8a51f6)
+![2a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/55b71d7a-1340-4be4-8a32-8aeded6927d4)
+
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ee52d7bb-ccfb-43f9-89fa-db98f2d038a8)
+
+![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/38e945af-44fd-458c-bd01-e53a9e46116d)
+
+Now we do the Plasma Anisotropic Etching
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/dbb922e9-9e04-4e64-a30a-b86663728a6f)
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/fa0fb824-2d94-4985-8676-e2a24af43176)
+
 #### Source and Drain Formation
+
 #### Local interconnect formation
 #### Higher level metal formation
 #### Lab introduction to SKY1130 basiclayers layout and LEF using inverter
