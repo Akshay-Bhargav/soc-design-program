@@ -639,8 +639,46 @@ Now we do the Plasma Anisotropic Etching
 ![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/fa0fb824-2d94-4985-8676-e2a24af43176)
 
 #### Source and Drain Formation
+Here we create the source and  drain terminal using 2 more mask and at last we will do high temperature annealing.
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e641e8a6-f57e-4ac7-bbe3-9492b14b7719)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/124fb35a-2fea-4eab-8fcf-b8df900edf4d)
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4a35c4d3-ff9b-4150-b33d-669340cf9319)
+![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/373e57b0-561c-472d-8a1a-d7a1d30541e0)
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/02a034f9-3289-43ad-aa12-47ea315c3f32)
 
 #### Local interconnect formation
+In this we create the metal for the connects.We use a layer of Titanium followed by heating in the presence of Nitrogen which results in another layer.
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f99ee2e1-d6cd-4ebd-a0c3-379e4f4630f6)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/9dc59877-82fa-4516-93fb-47a4e8b878d6)
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/680aeee0-6686-4aa8-8b63-f8ed0764dc3d)
+
+After this we etch out the unnecessory portion with the help of mask 11.TiN is etched using RCA cleaning![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/02079164-f2a8-4809-a2c0-9d0dfa848c3d)
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/fc9ad821-d479-4123-8c24-206d0998018f)
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7768991e-d229-4e5d-a405-989fb0307832)
+
 #### Higher level metal formation
+Place a layer of silicon dioxide with Phosphorous and Boron which is called as Phosphosiicate glass.
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/dcb6812d-c998-459d-a8b8-f5d5a64b674d)
+
+After this undertake the Chemical Mechanical Polishing
+![2a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7dc6dbdd-bd18-4ae2-88f0-1971235b6d86)
+
+Create the contact holes with the help of mask 12
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/624e90e1-6402-4f61-9461-9b0dcfddae4c)
+
+Place a Titanium Nitrate which works as a barrier followed by Blanket tungsten layer and again do the CMP.![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/82ff2e54-3807-4a34-a6c9-3638f49fe46f)
+
+
+Place Aluminium layer and conduct the masking to get a Aluminium layer at particular part
+![4](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/2f3eca24-24e9-434c-b026-27979690b578)
+![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a45de6e1-bc2d-4088-aaed-6875265f7814)
+
+Later  place the oxide layer and create a hole in the region of Aluminium with the help of mask 14.Place the titanium and tugstan layer and palce the aluminum layer with more width. Use mask 15 to define the area of Aluminium.
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/82234e06-e827-44b1-8c9e-0425c4ce3cf9)
+
+Last layer is of dielectric and using mask 16 for the contact of aluminium
+![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/364f6e25-5eb3-4afd-8381-fc62e62da7b8)
+![8](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/21faea1b-c0bb-4c1e-8461-69a798c53393)
+
 #### Lab introduction to SKY1130 basiclayers layout and LEF using inverter
 #### Lab steps to create std cell layout and extract spice netlist
