@@ -714,9 +714,21 @@ In order to open the extracted file "vim (extracted file name)"
 Spice documnet looks like this:
 ![spice window](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/dbab86ca-f3f9-43f4-808c-c1cd2ba41d73)
 
+
 ### SKY130 Tech File Labs
 #### LAb steps to create final SPICE deck uding Sky130 tech
+* Define all the necessary components in the script.
+* Add pmos and nmos library.
+* Pulse syntax = Variable_name a b PULSE(start_voltage end_voltage starting_point rising_delay fall_time pulse_width time_period)
+* This is the path for the pmos and nmos libraies
+ ![nmos lib](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f4b5afc7-c2f5-471d-8e07-745c2153e27b)
+* Inside the pmos library![inside pmoslib](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7623d79e-9a52-4ae1-819b-693cd4f2b647)
+* Spice code![code](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c98a0bd5-25d7-44cf-8831-1758acae3c37)
+* Simulation path of spice![simulation of spice](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4695efe7-bd08-419a-9107-b63fd85d4494)
+* Spice output
+![spice output](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f151e53e-e89d-4dfd-bb82-1bb73e3f5f03)
 #### Lab steps to characterize inverter using sky130 model files
+
 #### Lab introduction to Magic tool options and DRC rules
 #### Lab introduction ro SKY130 padk's and steps to download labs
 #### Lab introduction to MAgic and steps to load Sky130 tech-rules
