@@ -595,7 +595,7 @@ The 3rd steps is the N-WELL and P-WELL fabrication.It will be carried out as sho
 
 * Boron has been ion implanted into the substrate![5](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/619200b7-da5f-4226-8451-6ed4c4b04a9e)
 
-* Same procedure is carried out for the N-Well where phosphorus will be ion implemented.
+* Same procedure is carried out for the N-Well with mask 3,  where phosphorus will be ion implemented.
 ![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/b98e73ac-e691-4828-9827-306c31cc442f)
 ![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d953d86d-5e2d-4daf-be4e-1c89d00fe85e)
 
@@ -603,11 +603,11 @@ The 3rd steps is the N-WELL and P-WELL fabrication.It will be carried out as sho
 ![8](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/27fe8188-15b6-4bc1-8195-b5eff8ddabe9)
 ![9](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a68fb39f-9a12-4131-a86c-27331f8400f9)
 
-
-
-
-
 #### Formation of gate terminal
+
+
+
+
 #### Lightly doped drain formation
 #### Source and Drain Formation
 #### Local interconnect formation
