@@ -1,4 +1,5 @@
-![Screenshot 2024-05-06 033205](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ffc5a7df-2d40-4ce0-819e-e2dd29d5852c)# SoC-Design-Program
+
+# SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -752,8 +753,9 @@ DRC menu:
 Cifoutput section:
 ![Screenshot 2024-05-06 033355](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/cfe6f621-df76-4626-bbc4-ad2df46760b2)
 
-#### Lab introduction ro SKY130 padk's and steps to download labs
-
+#### Lab introduction to SKY130 padk's and steps to download labs
+This section deals with the Sky130 manual ,rules of the Skywater etc.
+Link to download from github wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tg
 
 #### Lab introduction to MAgic and steps to load Sky130 tech-rules
 #### Lab exersice to fix poly.9 error in sky130 tech-file
