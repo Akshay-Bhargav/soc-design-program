@@ -1,4 +1,4 @@
-# SoC-Design-Program
+![error](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/19caf753-4d1a-4c8a-945b-edec4855d53d)![error](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/db44cab4-0514-475d-a7be-70b58ae7469c)# SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -681,4 +681,39 @@ Last layer is of dielectric and using mask 16 for the contact of aluminium
 ![8](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/21faea1b-c0bb-4c1e-8461-69a798c53393)
 
 #### Lab introduction to SKY1130 basiclayers layout and LEF using inverter
+In this section we are going to look into the options in the Magic
+* Finding the layer name and the connection link
+![nmos](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/efddc29d-ef29-4a14-b5d8-ba91cbed2775)
+![pmos region](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/5b900749-9cff-433a-96e3-79022c981cbe)
+![connection shown](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e5d4ab16-d524-4ed7-ac8d-fa1e78cc858f)
+
 #### Lab steps to create std cell layout and extract spice netlist
+Layers in the layout are
+* Locali,N-well,nsubstrate
+* A connectivity has to be dine between locali and N-well, locali and N-substrate and with metal(licon)
+* DRC error
+  ![error](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d978b46b-cd08-4ca8-9b07-f17df9c68a19)
+![ticon](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/966dca01-c03a-4ea3-ab4e-2bffe4b71871)
+
+* The important commands in ticon winodw are
+ - extract all(extracts the layout data)
+ - ext2spice cthresh 0 rthresh 0(extracts the parasitic capacitence)
+ - ext2spice(conversion  of format)
+
+* After this the Magic file will get extracted to the Spice format and we can see the new folder   
+![done](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/12896cae-9fde-4a62-abb5-aeaf10ea32f9)
+
+In order to open the extracted file "vim (extracted file name)"
+Spice documnet looks like this:
+![spice window](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/dbab86ca-f3f9-43f4-808c-c1cd2ba41d73)
+
+### SKY130 Tech File Labs
+#### LAb steps to create final SPICE deck uding Sky130 tech
+#### Lab steps to characterize inverter using sky130 model files
+#### Lab introduction to Magic tool options and DRC rules
+#### Lab introduction ro SKY130 padk's and steps to download labs
+#### Lab introduction to MAgic and steps to load Sky130 tech-rules
+#### Lab exersice to fix poly.9 error in sky130 tech-file
+#### Lab exercise to implement poly resistor spacing to diff and tap
+#### Lab challenge exercise to  describe DRC error as geometrical construct
+#### Lab challenge exercise to find missing or incorrect rules and fix them
