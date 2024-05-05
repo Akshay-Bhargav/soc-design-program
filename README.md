@@ -1,4 +1,4 @@
-![error](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/19caf753-4d1a-4c8a-945b-edec4855d53d)![error](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/db44cab4-0514-475d-a7be-70b58ae7469c)# SoC-Design-Program
+# SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -215,6 +215,13 @@ Synthesis stat report will be generated in this form
 Synthesis timing report will get generated like this
 ![timing dealy](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ad6fc67f-3d06-4449-8db9-469fd48d54e8)
 
+Assignment to calculate the flip flop ratio
+
+Flip flop ratio = total number of DFF divided by total number of cells
+![ass](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/00aa1f46-9435-49d3-b1a8-f25c51b944d6)
+
+FF ratio = 1613/14876
+FF ratio = 0.108429.
 
 ## DAY 2 -  Good floorplan vs bad flooeplan and introduction to library cells
 ### Chip Floor planning considerations
