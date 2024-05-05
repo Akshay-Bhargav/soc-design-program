@@ -1,4 +1,4 @@
-# SoC-Design-Program
+![Screenshot 2024-05-06 033205](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ffc5a7df-2d40-4ce0-819e-e2dd29d5852c)# SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -727,6 +727,7 @@ Spice documnet looks like this:
 * Simulation path of spice![simulation of spice](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4695efe7-bd08-419a-9107-b63fd85d4494)
 * Spice output
 ![spice output](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f151e53e-e89d-4dfd-bb82-1bb73e3f5f03)
+
 #### Lab steps to characterize inverter using sky130 model files
 GRAPH CODE = plot y vs time a
 * Output graph![output](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/49ff4a21-cd0f-4e1f-a2a6-0f08699d4b44)
@@ -738,9 +739,22 @@ GRAPH CODE = plot y vs time a
 * fall delay =0.0274![fall delay](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c05c9150-f9cd-4731-82e6-51698cf793c8)
 
 #### Lab introduction to Magic tool options and DRC rules
+Link to open the Magic http://opencircuitdesign.com/magic/
+The MAgic is an Open source tool whose menu and other contents are shown in the below photos
+![Screenshot 2024-05-06 032424](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/2505c46d-658d-4946-bab3-8070885f7c3e)
 
+Menu of the Technical part:
+![Screenshot 2024-05-06 033158](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/500ccd8c-c605-4009-b0f7-cd1eaaf58c79)
+
+DRC menu:
+![Screenshot 2024-05-06 033205](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7c9f9521-8dec-4ff8-87ff-b941584733c1)
+
+Cifoutput section:
+![Screenshot 2024-05-06 033355](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/cfe6f621-df76-4626-bbc4-ad2df46760b2)
 
 #### Lab introduction ro SKY130 padk's and steps to download labs
+
+
 #### Lab introduction to MAgic and steps to load Sky130 tech-rules
 #### Lab exersice to fix poly.9 error in sky130 tech-file
 #### Lab exercise to implement poly resistor spacing to diff and tap
