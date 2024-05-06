@@ -1,4 +1,3 @@
-![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7f37f804-f9e2-4b3c-91b2-ecf241597c44)
 # SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
