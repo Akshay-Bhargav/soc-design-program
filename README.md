@@ -757,8 +757,60 @@ Cifoutput section:
 This section deals with the Sky130 manual ,rules of the Skywater etc.
 Link to download from github wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tg
 
-#### Lab introduction to MAgic and steps to load Sky130 tech-rules
-#### Lab exersice to fix poly.9 error in sky130 tech-file
-#### Lab exercise to implement poly resistor spacing to diff and tap
-#### Lab challenge exercise to  describe DRC error as geometrical construct
-#### Lab challenge exercise to find missing or incorrect rules and fix them
+## DAY 4 - Pre-layout tin=mings analysis and importance of good clock tree
+### Timing modelling using delay tables
+####  Lab steps to convert grid info to track info
+Track path and information inside the track
+![track info](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/165caec2-83d7-4d37-b502-a976d128fae7)
+
+![track data](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/1f4c55c6-435d-42ea-8020-387d5c74fd3a)
+
+Applying grid to the layout to show that the input and output pins are on the X an Y axis defined in the TRACK
+![grid](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/67d0bd8f-10c1-489b-b131-ea5a4eb83384)
+![output grid](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/66ba416b-ef3e-4231-8e38-e2d49a534b23)
+
+#### Lab steps to convert magic layout to std cell LEF
+The other condition is that the standard cell width and height should be the odd multiples of X-pitch![h and w](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/28298a11-50b8-4fe5-88c1-ed0cc36fc05e)
+
+Creating the port using the variable![defining ports](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c2bb0477-6cc7-4d5b-9f09-bd85c87a7fa9)
+
+Defining the ports![define port](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d6593d0a-6573-413b-8110-2b88f891eb0f)
+
+Converting layout into lef file.
+![creating lef file](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/18a10467-d5be-44a3-ac28-afd62d32ce28)
+![lef file of the layout](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/606c8e29-00d2-404d-9158-fa18908dd271)
+
+#### Introduction to timing libs and steps to include new cell in synthesis
+Copying the created lef file in src to store it in the picorv32a
+![copy lef to src](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/b80c52f6-d197-472f-a43c-02797aed2b3e)
+
+Copy the cell information to the src![library](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/bb28eecb-5a2f-4027-974c-6d6d94fe904a)
+
+Modify the config.tcl![modify](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4024d6aa-4227-4a01-8c8c-a92f3899ffe9)
+
+Run the OpenLANE![to run the copied file](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4ac0bc7e-4a51-41bd-a0c2-543ebbf9a9b7)
+
+Run the prepartion and Synthesis![synthesis](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/bcbf030e-7dd2-4d25-82af-fe99a5109247)
+
+
+#### Introduction to delay tables
+#### Delay table usage Part 1
+#### Delay table usage Part 2 
+#### Lab steps to configure synthesis settings to fix slack and include vsdinv
+### Timing analysis with ideal clocks using openSTA
+#### Setup timing analysis and introduction to flipflop setup time
+#### Introduction to clock jitter and uncertainty
+#### Lab steps to configure OpenSTA for pst-synth timing analysis
+#### Lab steps to optimize synthesis to reduce setuo violations
+#### Lab steps to do basic timing ECO
+### Clock tree synthesis TritonCTS and signal integrity
+#### Clock tree routing and buffer using H-tree algorithm
+#### Cross talk and clock net
+#### Lab steps to run CTS using TritonCTS
+#### Lab steps to verify CTS runs
+### Timing analysis with real clocks using openSTA
+#### Setup timing analysis using real clocks 
+#### Hold timing analysis using real clocks
+#### Lab steps to analyze timing with real clocks using OpenSTA
+#### Lab steps to executr OpenSTA with right timing libraries and CTS assignment
+#### Lab steps to observe impact of bigger CTS buffers on setup and hold timing
