@@ -1,4 +1,4 @@
-# SoC-Design-Program
+![WhatsApp Image 2024-05-07 at 1a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3ed7f894-9f47-4b18-8e78-1392a353e846)# SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
@@ -853,10 +853,26 @@ Typical.tcl script
 ![path fo rtypical](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/04b82efa-b080-4205-b283-4d2bfaee6646)
 
 #### Lab steps to optimize synthesis to reduce setuo violations
-#### Lab steps to do basic timing ECO
+Here we reduce the delay of the nets with the higher delays
+![synthesis](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e12f7cbf-5973-45ce-a440-48012b235325)
+
+![floorplan](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4f85f5cb-d760-4aab-bfc7-1e1d0b962581)
+
 ### Clock tree synthesis TritonCTS and signal integrity
 #### Clock tree routing and buffer using H-tree algorithm
+Here we are going to implement the clock tree.When we directly connect the clock to the flip-flops it creats the skew so we follow H-Tree method to implement the clock
+![WhatsApp Image 2024-05-07 at 1a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a228eae9-9ab8-424a-a565-220b94db902a)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/5aabb054-8bda-4e5c-99e8-da2695d6c7a2)
+
+Even when we implement the clock in this format due to the length of the wire we may not get the required value or it may lead to the delay . so we use buffers to regulate all this.![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/1080834a-43c0-4223-9e4f-081680bc07b0)
+
 #### Cross talk and clock net
+Encapsulate the clock wires.When the clock wires pass through the other wires cross talk may happen which results in the delay of the signal.Shielding may result in glitch and delta delay. 
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d6603bf8-bbea-49bb-bd2b-afbb15532674)
+
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/da74b1b9-6b9b-4565-b6f9-9505bd88e6d4)
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/2019453f-6ced-4ff5-9c8c-548ea75f2bb1)
+
 #### Lab steps to run CTS using TritonCTS
 #### Lab steps to verify CTS runs
 ### Timing analysis with real clocks using openSTA
