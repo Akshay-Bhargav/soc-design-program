@@ -794,9 +794,19 @@ Run the prepartion and Synthesis![synthesis](https://github.com/Akshay-Bhargav/s
 
 
 #### Introduction to delay tables
-#### Delay table usage Part 1
-#### Delay table usage Part 2 
+AND gate and OR gate are used in replacement to the inverter to reduce the repeatation of the clock.In the delay model all the sizes of the clock buffers at a level should be equal.We use delay table to each and every cell to build the dealy model of the circuit
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a92b93e3-b952-4300-94ae-14e961f5e6b2)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ca7419be-875a-48c3-b34f-423c6b424182)
+
+#### Delay table usage Part 1 and Part 2 
+In the Delay Table locate the point at which the input and output capacitance will meet , the value at that point describes the dealy of that gate for the given capacitance.Every gate has its own delay table.When the capacitance value is between some values in the table we form a equation and get the value for that value
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f8354a24-e563-4b39-9f26-232a3a4c3e30)
+![6](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/e46ff535-580c-4611-87df-26bf8646fef8)
+
+![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d1f943ae-9646-4dd5-bec7-d012a655bb33)
+
 #### Lab steps to configure synthesis settings to fix slack and include vsdinv
+
 ### Timing analysis with ideal clocks using openSTA
 #### Setup timing analysis and introduction to flipflop setup time
 #### Introduction to clock jitter and uncertainty
