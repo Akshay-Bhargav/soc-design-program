@@ -1,4 +1,4 @@
-![WhatsApp Image 2024-05-07 at 1a](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/3ed7f894-9f47-4b18-8e78-1392a353e846)# SoC-Design-Program
+# SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
 #### Introduction to QFN-48 PAckage,Chip,Pads,core,die and IPs
