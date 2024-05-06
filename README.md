@@ -1,4 +1,4 @@
-
+![layout path](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/1066056c-e38d-4307-95a0-90191dad8585)
 # SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
@@ -806,6 +806,25 @@ In the Delay Table locate the point at which the input and output capacitance wi
 ![7](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d1f943ae-9646-4dd5-bec7-d012a655bb33)
 
 #### Lab steps to configure synthesis settings to fix slack and include vsdinv
+
+Modify the README.md file as per the need so that we can reduce the slack
+![modifying the parameters](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7d4a10c8-63e5-4ab4-8ada-0fe1189a66b7)
+
+Synthesis and run floorplan
+![synthesis](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/77880e9b-0ba1-4856-8e08-982b580a8700)
+
+Placement
+![place](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/4d299378-f618-4796-8e19-f29375646aad)
+
+Layout
+
+![layout path](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/c05ae01b-0432-4a6d-a5e6-e675172dbbba)
+
+![layout1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/f472f72a-b567-4a0a-bffe-cd41c62fa0b0)
+
+![layout2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/90dd29aa-5b30-4ebe-b244-d1c7375dfb18)
+
+![layout3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/947fa73b-3ff6-477b-8d01-6b394adb5f3e)
 
 ### Timing analysis with ideal clocks using openSTA
 #### Setup timing analysis and introduction to flipflop setup time
