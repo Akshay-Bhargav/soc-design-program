@@ -1,4 +1,4 @@
-
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7f37f804-f9e2-4b3c-91b2-ecf241597c44)
 # SoC-Design-Program
 ## DAY 1 - Inception of open-source EDA,OpenLANE and Sky139PDK
 ### How to talk to computers
@@ -828,8 +828,31 @@ Layout
 
 ### Timing analysis with ideal clocks using openSTA
 #### Setup timing analysis and introduction to flipflop setup time
+
+A combinational ciruit will be having 2 flip flops namely latch and capture flip-flop as shown in the figure![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/a127bacd-e2d9-4218-812c-5c4061fc63d7)
+
+The clock period is T to get the output at the capture latch.Therefore the delay at the combinationa ciruits must be less than clock period.But each flip-flop will contain 2 MUx which will be havin there own delay. So the capture latch requires some time to pass the value to the 2nd mux. So in total let us consider the delay generated due to the 1st mux will be "S" and when the clock period reaches T the 2nd mux will give the output. So the delay of the combinational circuit must be less than T-S.
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/63443db1-4723-422b-b75b-19a6435d98e5)
+![3](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/7265f217-3efc-4617-a7ca-43c6398d3723)
+
 #### Introduction to clock jitter and uncertainty
+Jitter - It is the temparory variation in clock signal generated due to the clock ciruit.So in this case the clock may arrive fastly or may face the delay.So the total tim period will decrease.So for the clock period now we have to take into caniserations of the delay by the mux and also we need to consider the jitter.
+![1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/ff39a919-b115-466b-a8b3-0c11ca7b5886)
+![2](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/20b34364-e729-412f-a549-6bce18d136b6)
+
 #### Lab steps to configure OpenSTA for pst-synth timing analysis
+Create new file pre_sta.conf
+![pre_sta conf](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/2f00c357-3538-4cf2-984d-3c12627b93ef)
+
+![prepath](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/aeea400f-a8cf-46f2-94fb-7e53d0175a65)
+
+Create one more file called my_base.sdc
+![mybase1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/87e912d1-138e-4c8e-ba79-ded42baec779)
+
+Typical.tcl script
+![typical 1](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/d0fe9c1a-9d7c-4b97-a503-f95dcbd9a2cc)
+![path fo rtypical](https://github.com/Akshay-Bhargav/soc-design-program/assets/168112516/04b82efa-b080-4205-b283-4d2bfaee6646)
+
 #### Lab steps to optimize synthesis to reduce setuo violations
 #### Lab steps to do basic timing ECO
 ### Clock tree synthesis TritonCTS and signal integrity
