@@ -756,7 +756,7 @@ Cifoutput section:
 This section deals with the Sky130 manual ,rules of the Skywater etc.
 Link to download from github wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tg
 
-## DAY 4 - Pre-layout tin=mings analysis and importance of good clock tree
+## DAY 4 - Pre-layout timing analysis and importance of good clock tree
 ### Timing modelling using delay tables
 ####  Lab steps to convert grid info to track info
 Track path and information inside the track
